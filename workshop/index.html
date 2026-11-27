@@ -1,34 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>learning website</title>
-	<style>
-		*{
-			box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-		}
-		 body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f6f8;
-            color: #333;
-        }
-         header {
-            background-color: #1e3a5f;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-         header h1 {
-            margin-bottom: 5px;
-        }
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnHub | Student Learning Resource Platform</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="header">
+  <div class="logo">
+    <h1>LearnHub</h1>
+    <p>Student Learning Resource Platform</p>
+  </div>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="badge">5CS045 • WEEK 1</span>
+    <h2>Learn. Practice. Grow.</h2>
+    <p>Simple learning resources for students studying programming, web development and useful academic skills.</p>
+    <a class="button" href="#courses">Explore Courses</a>
+  </div>
+</section>
+
+<section id="courses" class="section">
+  <h2>Popular Courses</h2>
+  <p class="section-intro">Build your skills with simple, practical learning materials.</p>
+
+  <div class="course-grid">
+    <article class="course-card">
+      <img src="images/coding.jpg" alt="Student learning web development on a laptop">
+      <div class="card-content">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS and the basics of building modern websites.</p>
+        <a href="#resources">Learn More →</a>
+      </div>
+    </article>
+
+    <article class="course-card">
+      <img src="images/programming.jpg" alt="Student practicing computer programming">
+      <div class="card-content">
+        <h3>Programming</h3>
+        <p>Improve programming logic through examples, exercises and projects.</p>
+        <a href="#resources">Learn More →</a>
+      </div>
+    </article>
+
+    <article class="course-card">
+      <img src="images/learning.jpg" alt="Student studying academic learning materials">
+      <div class="card-content">
+        <h3>Study Skills</h3>
+        <p>Use simple techniques for better focus, organization and productivity.</p>
+        <a href="#resources">Learn More →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="resources" class="resource-layout">
+  <div class="resources">
+    <h2>Learning Resources</h2>
+
+    <article class="resource-card">
+      <h3>HTML Basics</h3>
+      <p>Learn document structure, semantic elements, headings, links, images and lists.</p>
+      <ul>
+        <li>HTML structure</li>
+        <li>Semantic HTML</li>
+        <li>Links and images</li>
+        <li>Forms and tables</li>
+      </ul>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Visit HTML Guide</a>
+    </article>
+
+    <article class="resource-card">
+      <h3>CSS Basics</h3>
+      <p>Learn colors, typography, Flexbox, Grid and responsive design.</p>
+      <ul>
+        <li>Colors and typography</li>
+        <li>Flexbox</li>
+        <li>CSS Grid</li>
+        <li>Media queries</li>
+      </ul>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Visit CSS Guide</a>
+    </article>
+  </div>
+
+  <aside class="sidebar">
+    <h2>Quick Information</h2>
+    <div class="side-box">
+      <h3>📢 Announcement</h3>
+      <p>Week 1 focuses on building a responsive Student Learning Resource Platform using HTML and CSS.</p>
+    </div>
+    <div class="side-box">
+      <h3>📚 Study Tips</h3>
+      <ol>
+        <li>Study regularly.</li>
+        <li>Practice coding.</li>
+        <li>Take short breaks.</li>
+        <li>Review your notes.</li>
+      </ol>
+    </div>
+    <div class="side-box">
+      <h3>Useful Links</h3>
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a><br>
+      <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <h2>Learning Environment</h2>
+  <figure class="learning-figure">
+    <img src="images/learning.jpg" alt="Student studying in a focused learning environment">
+    <figcaption>A focused learning environment helps students improve their academic performance.</figcaption>
+  </figure>
+</section>
+
+<section id="media" class="section media-section">
+  <h2>Multimedia Learning</h2>
+  <div class="media-container">
+    <article class="media-card">
+      <h3>Short Learning Video</h3>
+      <video controls>
+        <source src="video/learning.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <p>Short, low-quality practice video included for the Week 1 multimedia requirement.</p>
+    </article>
+
+    <article class="media-card">
+      <h3>Study Audio</h3>
+      <audio controls>
+        <source src="audio/study.mp3" type="audio/mpeg">
+        <source src="audio/study.wav" type="audio/wav">
+        Your browser does not support HTML5 audio.
+      </audio>
+      <p>Short study audio clip for demonstrating the HTML5 audio element.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <h2>About LearnHub</h2>
+  <p>LearnHub provides students with easy access to educational materials, tutorials and multimedia resources.</p>
+  <p>The website uses semantic HTML, Flexbox, CSS Grid and responsive media queries for mobile, tablet and desktop screens.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div>
+    <h2>LearnHub</h2>
+    <p>Student Learning Resource Platform</p>
+  </div>
+  <div>
+    <p>© 2026 LearnHub • 5CS045 Full Stack Web Development</p>
+  </div>
+</footer>
 
 </body>
 </html>
